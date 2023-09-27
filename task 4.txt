@@ -1,0 +1,165 @@
+1. Do the below programs in anonymous function & IIFE
+
+
+A. Print odd numbers in an array
+
+    function poda(a,b){
+for(var i=a ; i<b  ; i++)
+if(i % 2 == 0){
+   console.log(i)
+  }
+}
+poda(1,100);
+
+
+
+B .Convert all the strings to title caps in a string array
+
+
+
+C. Sum of all numbers in an array
+
+    function sumof(...ele){
+  let sum =0 ;
+  for(var i=0 ; i<ele.length; i++){
+    sum = sum + ele[i];
+    }
+    return sum ;
+  }
+  console.log(sumof(5));  
+
+
+E. Return all the prime numbers in an array
+
+     function prime(n) {
+  if (n < 2)
+    return `${n} is not a prime`
+  
+  for(var i=2 ;i<n ; i++){
+    if(n % i === 0) {
+      return `${n} is not a prime number`
+      }
+    }
+    return `${n} is a prime number`
+  }
+  console.log(prime(23));
+
+
+
+
+f. Return all the palindromes in an array
+
+  function palan(st){
+  var res = [...st];
+  console.log(res); 
+  }
+  palan("dad");
+
+
+
+G. Return median of two sorted arrays of the same size.
+
+   function sord(a,b){
+  var res = [...a,...b];
+  console.log(res); 
+  }
+  sord([5,6,7],[5,6,7]);
+
+
+
+
+H.Remove duplicates from an array
+  
+
+  function same(a){
+  let obj = a
+  obj={};
+  for(let i of a){
+    obj[i] = true ;
+    }
+    let b =Object.keys (obj);
+    console.log(b)
+  }
+  same([5,6,7,5,6]);
+
+
+
+
+
+I.  Rotate an array by k times
+
+  function rotat (a,b){
+  for(let i=0 ; i<b ; i++){
+    a.unshift(a.pop());
+    console.log(`step ${i + 1}:`,a);
+    }
+  }
+  rotat([1,2,3,4,5,6,7],3);
+
+
+
+
+
+-------------------------------------------------------------------
+
+
+Do the below programs in arrow functions
+
+
+
+ a.   Print odd numbers in an array
+
+
+      function numbers(l, r) {
+      var x=[];
+      var i=l;
+      while(x.push(i++)<r){};
+      return x;        
+    }
+
+
+    console.log(numbers(10, 19));
+      
+
+
+b. Sum of all numbers in an array
+
+
+  var summa=(a) =>{
+  let sum =0;
+  summa.forEach(element=>{
+      sum = sum + element;
+    });
+  console.log(sum);
+  }
+  console.log(summa([1,2,3,4,5]));            
+
+c.Return all the prime numbers in an array
+
+
+
+    var prime(n) => {
+  if (n < 2)
+    return `${n} is not a prime`
+  
+  for(var i=2 ;i<n ; i++){
+    if(n % i === 0) {
+      return `${n} is not a prime number`
+      }
+    }
+    return `${n} is a prime number`
+  }
+  console.log(prime(23));
+
+
+d.  Return all the palindromes in an array
+
+
+  var palan=(a) =>{
+  let go = [...a];
+  console.log(go);
+  }
+  palan("mom")
+
+
+
